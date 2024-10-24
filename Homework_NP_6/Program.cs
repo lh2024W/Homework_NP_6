@@ -89,7 +89,8 @@ namespace Homework_NP_6
             {
                 client.BaseAddress = new Uri(BaseUrl);
 
-                string apiKey = "159b42dd-de30-48f6-88db-4b3009b4af2b";
+                string apiKey = "159b42dd-de30-48f6-88db-4b3009b4af2b"; 
+               //мой ключ пока заблокирован string apiKey = "afd20b41-4a78-4216-835a-51633bf01572"; (попробовать позже)
 
                 var content = new StringContent(
                     $"{{\"jsonrpc\":\"2.0\",\"method\":\"generateIntegers\",\"params\":{{\"apiKey\":\"{apiKey}\",\"n\":1,\"min\":1,\"max\":{sides},\"replacement\":true}},\"id\":1}}",
